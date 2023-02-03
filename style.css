@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 62.5%;
+}
+
+.score{
+    display: flex;
+    font-size: large;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.score p{
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    transition: opacity 0.5s ease 0.5s;
+    /* opacity: 0; */
+}
+.intro h1{
+    font-size: 3rem;
+}
+.intro button,.match button{
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid rgb(8, 106, 4);
+    background: rgb(4, 75, 4);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.intro button{
+    background: red;
+}
+.winner{
+    text-align: center;
+}
+.match{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: opacity 0.5s ease 0.5s;
+
+    /* opacity: 0; */
+}
+
+.hands , .options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p-img{
+    transform: rotateY(180deg);
+}
+.quit{
+    display: flex;
+    position: absolute;
+    /* background-color: bisque; */
+    background: bisque;
+    /* background: red; */
+    top: 90%;
+    left : 50%;
+    transform: translate(-80%,-50%);
+    
+}
+.quit button{
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid rgb(111, 14, 43);
+    background: rgb(75, 4, 4);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.match h2{
+    font-size: 2.6rem;
+}
+
+
+
+
+
+div.fade-out{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fade-in{
+    opacity: 1;
+    pointer-events: all;
+}
